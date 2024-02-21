@@ -1,0 +1,9 @@
+def calcular_potencia( base,  exponente)
+
+    if (exponente==0)
+      return 1;
+    else
+      return base*calcularpotencia(base, exponente -1);
+
+z = calcular_potencia(base, exponente)
+print(Z
