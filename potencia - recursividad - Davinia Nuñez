@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int calcularpotencia(int base, int exponente);
+int main()
+{
+    int base, expo;
+    cout<<"Ingrese la base: "<<endl;
+    cin>>base;
+    cout<<"Ingrese el exponente:"<<endl;
+    cin>>expo;
+    cout<<"El resultado es : "<<calcularpotencia(base, expo);
+
+    return 0;
+}
+
+int calcularpotencia(int base, int exponente)
+{
+    if (exponente==0)
+      return 1;
+    else
+      return base*calcularpotencia(base, exponente -1);
+}
